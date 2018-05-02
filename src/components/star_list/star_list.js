@@ -8,7 +8,7 @@ class StarList extends Component {
       <section>
         <h2> Star List </h2>
         <ul>
-          {this.props.starsArray.map( (star) => <li>{star}</li>)}
+          {this.props.starsArray.map( (star) => <li key={star.name}>{star.name}</li>)}
         </ul>
       </section>
     );
